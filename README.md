@@ -13,3 +13,6 @@
 
 2. Praktikum 1 Langkah 4
 ![Screenshot layout_flutter](images/readme/02.jpg)
+
+3. Praktikum 2 
+![Screenshot layout_flutter](images/readme/03.jpg)
