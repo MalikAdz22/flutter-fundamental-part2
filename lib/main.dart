@@ -7,11 +7,41 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget titleSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: Row(
+        children: [
+          Expanded(
+            /* soal 1*/
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                /* soal 2*/
+                Container(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: const Text(
+                    'Wisata Gunung di Batu',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Text(
+                  'Batu, Malang, Indonesia',
+                  style: TextStyle(color: Colors.grey[500]),
+                ),
+              ],
+            ),
+          ),
+          /* soal 3*/
+          Icon(Icons.star, color: Colors.red[500]),
+          const Text("4.2"),
+        ],
+      ),
+    );
     return MaterialApp(
       title: 'Flutter layout: Nama dan NIM Anda',
       home: Scaffold(
         appBar: AppBar(title: const Text('Malik Adzano - 2341760161')),
-        body: const Center(child: Text('Hello World')),
+        body: Column(children: [titleSection]),
       ),
     );
   }
