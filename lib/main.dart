@@ -21,25 +21,18 @@ class MyApp extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
                     'Wisata Gunung di Batu',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
                 Text(
                   'Batu, Malang, Indonesia',
-                  style: TextStyle(
-                    color: Colors.grey[500],
-                  ),
+                  style: TextStyle(color: Colors.grey[500]),
                 ),
               ],
             ),
           ),
           /* soal 3*/
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
+          Icon(Icons.star, color: Colors.red[500]),
           const Text("41"),
         ],
       ),
@@ -70,16 +63,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout: Nama dan NIM Anda',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Malik Adzano - 2341760161'),
-        ),
-        body: Column(
+        appBar: AppBar(title: const Text('Malik Adzano - 2341760161')),
+        body: ListView(
           children: [
+            Image.asset(
+              'gunung.jpg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
             titleSection,
             buttonSection,
             textSection,
           ],
-        )
+        ),
       ),
     );
   }
