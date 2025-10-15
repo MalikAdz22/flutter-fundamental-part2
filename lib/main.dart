@@ -56,6 +56,17 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Malik Adzano - 2341760161\n'
+        'Kota Batu, yang terletak di dataran tinggi, dikenal dengan berbagai destinasi gunung yang menarik untuk dijelajahi. Berikut adalah beberapa gunung populer di Kota Batu:\n'
+        ' - Gunung Panderman: Gunung yang ikonik di Kota Batu dengan ketinggian 2.045 meter di atas permukaan laut (mdpl), cocok untuk pendaki pemula.\n'
+        ' - Gunung Butak: Berbatasan dengan Kota Batu, gunung ini berada dalam rangkaian Pegunungan Putri Tidur dan bisa diakses dengan mudah dari Batu.\n',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Nama dan NIM Anda',
       home: Scaffold(
@@ -66,6 +77,7 @@ class MyApp extends StatelessWidget {
           children: [
             titleSection,
             buttonSection,
+            textSection,
           ],
         )
       ),
